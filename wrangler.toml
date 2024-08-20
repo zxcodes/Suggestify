@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "suggestify"
+main = "src/main.ts"
+compatibility_date = "2024-08-06"
+compatibility_flags = ["nodejs_compat"]
+
+
+kv_namespaces = [{ binding = "SUGGESTIONS_STORE", id = "" }]
+
+[triggers]
+crons = ["0 9 * * sat"]

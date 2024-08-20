@@ -1,0 +1,23 @@
+{
+  "name": "suggestify",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --test-scheduled",
+    "logs": "wrangler tail"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.17.0",
+    "cheerio": "^1.0.0",
+    "resend": "^3.5.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/bun": "latest",
+    "@cloudflare/workers-types": "4.20240806.0",
+    "wrangler": "^3.72.0",
+    "typescript": "^5.0.0"
+  }
+}
