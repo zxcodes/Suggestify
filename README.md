@@ -13,7 +13,7 @@
 1. Clone the repository: `git clone https://github.com/zxcodes/Suggestify.git`
 2. Install dependencies: `bun install`
 
-3. Create a `.dev.vars` file in the root and store your API secrets there. An `.env` file won't work here since workers don't run in a typical Node runtime.
+  3. Create a `.dev.vars` file in the root and store your API secrets there. An `.env` file won't work here since workers don't run in a typical Node environment.
   - `RESEND_API_KEY`: Your Resend API key
   - `API_KEY`: Your Google AI API key
 
